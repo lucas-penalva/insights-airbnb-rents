@@ -1,4 +1,4 @@
-# Aluguel de Imóveis
+# Aluguel de Imóveis - Airbnb
   
 ![nyc](real-state.jpg)
 
@@ -15,20 +15,21 @@ Ele quer ajuda para descobrir as regiões com os aluguéis mais altos e os preç
 
 <table style="width:100%">
 <tr><th>Atributos</th><th>Descrição</th></tr>
-<tr><td>Store</td><td>ID exclusivo para cada loja</td></tr>
-<tr><td>Sales</td><td>quantidade de vendas por dia</td></tr>
-<tr><td>Customers</td><td>número de clientes no dia</td></tr>
-<tr><td>Open</td><td>indica se a loja está aberta ou fechada, 0 = closed, 1 = open</td></tr>
-<tr><td>StateHoliday</td><td>indica feriado estadual. Normalmente todas as lojas, com poucas exceções, estão fechadas nos feriados estaduais. Observe que todas as escolas estão fechadas nos feriados e fins de semana. a = feriado, b = feriado da páscoa, c = natal, 0 = nenhum</td></tr>
-<tr><td>SchoolHoliday</td><td>indica feriado escolar</td></tr>
-<tr><td>StoreType</td><td>diferencia entre 4 modelos de loja diferentes: a, b, c, d</td></tr>
-<tr><td>Assortment</td><td>descreve um nível de sortimento: a = básico, b = extra, c = estendido</td></tr>
-<tr><td>CompetitionDistance</td><td>indica a distância em metros do concorrente mais próximo</td></tr>
-<tr><td>CompetitionOpenSince[Month/Year]</td><td>mês e ano em que abriu o concorrente mais próximo</td></tr>
-<tr><td>Promo</td><td>indica se está ocorrendo alguma promoção na loja</td></tr>
-<tr><td>Promo2</td><td>é uma promoção contínua e consecutiva para algumas lojas: 0 = a loja não está participando, 1 = a loja está participando</td></tr>
-<tr><td>Promo2Since[Year/Week]</td><td>indica mês e ano que a loja iniciou a Promo2</td></tr>
-<tr><td>PromoInterval</td><td>indica os intervalos consecutivos em que a Promo2 é iniciada</td></tr>
+<tr><td>id</td><td>ID exclusivo para cada imóvel</td></tr>
+<tr><td>host_id</td><td>id do host de cada imóvel</td></tr>
+<tr><td>host_name</td><td>nome do host</td></tr>
+<tr><td>neighbourhood_group</td><td>nome do bairro que o imóvel está localizado</td></tr>
+<tr><td>neighbourhood</td><td>nome do subúrbio que o imóvel está localizado</td></tr>
+<tr><td>latitude</td><td>latitude do imóvel</td></tr>
+<tr><td>longitude</td><td>longitude do imóvel</td></tr>
+<tr><td>room_type</td><td>tipo de imóvel à ser alugado, podendo ser a casa/apto completo, quarto privado ou quarto compartilhado</td></tr>
+<tr><td>price</td><td>valor do aluguel</td></tr>
+<tr><td>minimum_nights</td><td>quantidade mínima de noites que alguém pode alugar o imóvel</td></tr>
+<tr><td>number_of_reviews</td><td>número de avaliações que um imóvel recebe</td></tr>
+<tr><td>last_review</td><td>data na qual o imóvel recebeu a última avaliação</td></tr>
+<tr><td>reviews_per_month</td><td>quantidade de avaliações que o imóvel recebe por mês</td></tr>
+<tr><td>calculated_host_listings_count</td><td>número de imóveis que um host é responsável</td></tr>
+<tr><td>availability_365</td><td>número de dias que o imóvel está disponível para ser alugado no ano</td></tr>
 </table>
 
 ## Bairros de Nova York
@@ -54,18 +55,39 @@ Etapa 05 - Responder as perguntas do CEO.
 
 # Insights:
 
+Hipótese 1 - Os aluguéis mais caros em média da cidade de Nova York está na região de Manhattan.
+
+![nyc](img/h1.png)
+
+A hipótese é verdadeira. Aluguéis na região de Manhattan, são em média, 8.34% mais caros que as demais.
+
+Hipótese 2 - Os aluguéis de imóveis do tipo completo são em média 15% mais caros que os demais.
+
+![nyc](img/h2.png)
+
+A hipótese é verdadeira. Imóveis do tipo completo, são em média, 28.03% mais caros que os demais.
+
+# Resultados: 
+
+Os imóveis ativos que possuem pelo menos uma avaliação e a melhor rentabilidade estão descritos na tabela abaixo de acordo com o bairro:
+
+|      __Bairro__       |   __Rentabilidade__  |
+| --------------------- | ---------------------| 
+|       Midtown         |    US$ 310.182.01    |
+|    Upper East Side    |    US$ 239.673.70    | 
+|       Harlem          |    US$ 194.435.50    |
+|    Upper West Side    |    US$ 191.731.30    |
+
+***Rentabilidade: indica o grau de sucesso de determinado investimento, calculado a partir do percentual de remuneração do capital investido na atividade.***
+
 # Conclusões:
 
-As perguntas do CEO que motivaram este projeto foram respondidas. Com base nos dados, o CEO pode dar novos passos no mercado imobiliário.
+As perguntas do CEO que motivaram este projeto foram respondidas. Com base nos dados, o CEO poderá dar novos passos no mercado imobiliário.
 
-# Trabalhos Futuros
+# Melhorias Futuras
 
+* Criação de mais insights.
+* Criar um app de visualização dos imóveis por região e sua densidade de preços.
+* Desenvolver um modelo de machine learning para prever o preço de uma propriedade.
 
-
-
-
-
-
-
-
-
+![plot](img/plot-map.png)
