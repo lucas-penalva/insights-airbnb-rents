@@ -31,10 +31,14 @@ Ele quer ajuda para descobrir as regiões com os aluguéis mais altos e os preç
 <tr><td>PromoInterval</td><td>indica os intervalos consecutivos em que a Promo2 é iniciada</td></tr>
 </table>
 
+## Bairros de Nova York
+
+![boroughs](nyc_boroughs.jpeg)
+
 # Premissas de Negócio:
 
-* 
-* 
+* Todos os imóveis estão disponíveis desde a data da última avaliação.
+* As linhas com valores NA na coluna 'last_review' representam propriedades que nunca foram alugadas ou avaliadas.
 
 # Estratégia de Negócio:
 
@@ -42,18 +46,21 @@ Etapa 01 - Entedimento do problema de négocio.
 
 Etapa 02 - Download do dataset diretamente do <a href="https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data" target="_blank">Kaggle</a>.
 
-Etapa 03 - Limpeza do conjunto de dados removendo valores discrepantes, valores NA e recursos desnecessários.
+Etapa 03 - Limpeza e análise do conjunto de dados.
 
 Etapa 04 - Exploração os dados (EDA) para criar hipóteses, gerar insights e validá-los.
 
+Etapa 05 - Responder as perguntas do CEO.
+
 # Insights:
 
-
-# Resultados:
-
-
-
 # Conclusões:
+
+As perguntas do CEO que motivaram este projeto foram respondidas. Com base nos dados, o CEO pode dar novos passos no mercado imobiliário.
+
+# Trabalhos Futuros
+
+
 
 
 
