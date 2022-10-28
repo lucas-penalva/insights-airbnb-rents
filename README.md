@@ -4,6 +4,12 @@
 
 # Problema de Negócio:
 
+O investidor James Bauer, gostaria de diversificar seus negócios e começar a investir em imóveis. Ele definiu que compraria imóveis na cidade de Nova York, nos Estados Unidos. Por ser um dos lugares mais caros para se morar no país, ele acredita que obterá um retorno satisfatório de seus investimentos se alugar imóveis na cidade. Como todas as suas decisões são baseadas em dados, ele quer que alguém o ajude nessa empreitada.
+
+Ele inicialmente planeja arrendar os imóveis adquiridos e por isso definiu que usará a plataforma Airbnb para esse fim. Ele encontrou um conjunto de dados na internet contendo dados sobre o comportamento dos anfitriões e suas propriedades na cidade de Nova York.
+
+Ele quer ajuda para descobrir as regiões com os aluguéis mais altos e os preços mais altos e quais apartamentos ou casas estão em regiões favoráveis da cidade de Nova York. Ele acredita que essas características o ajudarão a recuperar mais rapidamente o dinheiro investido na aquisição de alguns imóveis. O desafio é fazer uma análise exploratória e responder as perguntas do CEO.
+
 
 ## I. Atributos
 
